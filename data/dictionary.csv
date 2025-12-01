@@ -1,0 +1,153 @@
+Feature,Descrição
+acc_now_delinq,Number of contracts in which the borrower is in default
+acc_open_past_24mths,Number of contracts initiated in the last 24 months
+addr_state,State (federative unit) of the borrower
+all_util,Balance in relation to the credit limit (all contracts)
+annual_inc,Self-reported annual income by the borrower during registration
+annual_inc_joint,Self-reported joint annual income of co-borrowers
+application_type,Indicator of whether the request is made individually or jointly
+avg_cur_bal,Average balance of all contracts
+bc_open_to_buy,Total available revolving credit limit
+bc_util,Ratio between the current total balance and the total revolving credit limit
+chargeoff_within_12_mths,Number of loss-making transactions in the last 12 months
+collection_recovery_fee,Recovery rates for outsourced debts (collections)
+collections_12_mths_ex_med,"Number of outsourced debts (collections) in the last 12 months, excluding medical debts"
+debt_settlement_flag,Indication of whether the borrower is already classified as having a loss. Is in negotiation with a third-party company?
+debt_settlement_flag_date,Date of notification that the borrower in arrears is in negotiation with a third-party company
+deferral_term,Direct correlation (same number of notes at least) with hardship_type. Type of extension
+delinq_2yrs,Number of occurrences of delays exceeding 30 days (but paid) by the borrower in the last 2 years
+delinq_amnt,Amount due of the borrower's overdue operations
+desc,Description of the loan by the borrower
+disbursement_method,Method by which the borrower receives the funds (I don't think it interferes at all)
+dti,"Debt to Income. Debt-to-income ratio. Calculated with the total monthly commitment of the borrower, excluding mortgage and the requested loan, divided by the reported monthly income"
+dti_joint,Joint Debt to Income. Sum of aggregated monthly commitments divided by combined monthly income
+earliest_cr_line,Month reported by the borrower when they first took out a loan
+emp_length,"Length of employment in years. Possible values ​​between 0 and 10, with 0 being less than one year and 10 referring to ten years or more"
+emp_title,Position reported by the borrower at the time of loan application
+fico_range_high,Upper limit of the borrower's FICO score
+fico_range_low,Lower limit of the borrower's FICO score
+funded_amnt,Total amount committed to the loan on the date
+funded_amnt_inv,Total amount of the loan backed by investors on the date
+grade,Risk rating assigned to the loan
+hardship_amount,Amount of the hardship reduction
+hardship_dpd,Number of days past due after the start of the hardship agreement
+hardship_end_date,End of the agreement
+hardship_flag,Whether the borrower entered/entered hardship settlement or not. I imagine it's some kind of agreement
+hardship_last_payment_amount,Amount of the last payment of the agreement
+hardship_length,Same number of deferral_term and hardship_type observations
+hardship_loan_status,Status of the renegotiation agreement
+hardship_payoff_balance_amount,Balance due on the date the agreement began
+hardship_reason,Reason for the agreement. Different motivations may exist Greater or lesser impact on default risk
+hardship_start_date,Start of agreement
+hardship_status,Renegotiation/agreement status
+hardship_type,Type of agreement/negotiation
+home_ownership,Borrower's residential status
+id,Unique identifier for each borrower. None are repeated
+il_util,Ratio of current total balance to overall credit limit
+initial_list_status,Initial loan placement status – W (whole market) or F (fractional market)
+inq_fi,Number of personal finance applications
+inq_last_12m,Number of credit applications in the last 12 months
+inq_last_6mths,Number of credit applications in the last 6 months (excluding auto and real estate financing)
+installment,"Monthly loan payment amount, if approved"
+int_rate,Annual loan interest rate
+issue_d,Month the loan was granted
+last_credit_pull_d,Last time the Lending Club performed a credit check (in the sense of overall score. FICO). For this loan
+last_fico_range_high,Upper FICO score limit last time requested
+last_fico_range_low,Lower FICO score limit last time requested
+last_pymnt_amnt,Total amount of last payment received
+last_pymnt_d,Last month a payment was received
+loan_amnt,"The credit limit of the loan requested by the borrower. If at any time the credit department reduces the credit limit, this will be reflected in this value."
+loan_status,Current loan status
+max_bal_bc,Maximum current outstanding balance on all revolving credit agreements
+member_id,NaNs only
+mo_sin_old_il_acct,Number of months since the first loan agreement was entered into
+mo_sin_old_rev_tl_op,Number of months since the first revolving credit agreement was entered into
+mo_sin_rcnt_rev_tl_op,Number of months since the last revolving credit agreement was entered into
+mo_sin_rcnt_tl,Number of months since the last agreement was entered into
+mort_acc,Number of mortgages
+mths_since_last_delinq,Number of months since the borrower's last default
+mths_since_last_major_derog,Number of months since the last delinquency record of 90 days or worse (derogatory rating)
+mths_since_last_record,Number of months since the last public record (?)
+mths_since_rcnt_il,Months since the most recent agreement was Open
+mths_since_recent_bc,Number of months since the last credit card bill
+mths_since_recent_bc_dlq,Number of months since the last credit card bill was delinquent
+mths_since_recent_inq,Months since the last request (most recent inquiry)
+mths_since_recent_revol_delinq,Months since the last revolving credit delinquency
+next_pymnt_d,Schedule for the next payment (suddenly useless)
+num_accts_ever_120_pd,Number of contracts that are more than 120 days overdue
+num_actv_bc_tl,Number of active credit card accounts
+num_actv_rev_tl,Number of active revolving credit accounts
+num_bc_sats,Number of satisfactory credit card accounts (?)
+num_bc_tl,Number of credit card accounts
+num_il_tl,Number of loan accounts
+num_op_rev_tl,Number of active revolving credit accounts
+num_rev_accts,Number of revolving credit accounts
+num_rev_tl_bal_gt_0,Number of revolving credit accounts with a balance greater than zero
+num_sats,Number of satisfactory accounts (?)
+num_tl_120dpd_2m,Number of accounts with a 120-day delay (updated in the last 2 months)
+num_tl_30dpd,Number of accounts with a 30-day delay (updated in the last 2 months)
+num_tl_90g_dpd_24m,Number of accounts with 90+ days of delay in the last 24 months
+num_tl_op_past_12m,Number of accounts/contracts opened in the last 12 months
+open_acc,Number of active contracts (or lines of credit?) in the borrower's record
+open_acc_6m,Number of contracts opened in the last 6 months
+open_act_il,Number of currently active contracts
+open_il_12m,Number of contracts opened in the last 12 months
+open_il_24m,Number of contracts opened in the last 24 months
+open_il_6m,Number of currently active installment trades
+open_rv_12m,Number of revolving contracts in the last 12 months
+open_rv_24m,Number of revolving contracts in the last 24 months
+orig_projected_additional_accrued_interest,The original value of projected additional interest that will accrue to the Payment plan. This field will be null if the borrower breaks the contract.
+out_prncp,Remaining principal balance relative to the total financed.
+out_prncp_inv,Remaining principal balance relative to the total financed by investors.
+payment_plan_start_date,Date on which the first principal payment of the renegotiation is due.
+pct_tl_nvr_dlq,Percentage of transactions that have never been late.
+percent_bc_gt_75,Percentage of all cards with usage above 75% of the limit.
+policy_code,Indicator of public availability (policy_code = 1). Drop
+pub_rec,Number of publicly registered negative entries (Serasa/SPC)
+pub_rec_bankruptcies,Number of publicly registered bankruptcies
+purpose,Intended use of the loan as informed by the borrower at the time of application
+pymnt_plan,Indicator of whether a payment plan for the loan was provided in advance (business plan for the loan?)
+recoveries,Gross recovery of non-performing loans
+revol_bal,"Total revolving credit (recurring, type of credit card used, paid, available again)"
+revol_bal_joint,"Total combined revolving credit (from income compositions, etc.)"
+revol_util,Percentage of revolving credit usage
+sec_app_chargeoff_within_12_mths,Number of non-performing transactions by the second applicant in the last 12 months
+sec_app_collections_12_mths_ex_med,"Number of third-party debts (collections) in the last 12 months, excluding medical debts"
+sec_app_earliest_cr_line,Month reported by the second applicant when they first took out a loan
+sec_app_fico_range_high,Upper limit of the second applicant's FICO score
+sec_app_fico_range_low,Lower limit of the second applicant's FICO score
+sec_app_mort_acc,Number of mortgages held by the second applicant
+sec_app_mths_since_last_major_derog,Number of months since the last delinquency record of 90 days or worse (derogatory rating) of the second applicant
+sec_app_num_rev_accts,Number of revolving credit accounts of the second applicant
+sec_app_open_acc,Number of open contracts of the second applicant on the application date
+sec_app_open_act_il,Number of active contracts of the second applicant at the moment
+sec_app_revol_util,Percentage of revolving credit usage of the second applicant
+sec_app_inq_last_6mths,Number of credit requests in the last 6 months of the second applicant
+settlement_amount,"Agreement value, including any discount (if any)"
+settlement_date,Date of the recovery agreement
+settlement_percentage,Percentage of the original outstanding balance that was negotiated. The discount value is then the original value * (100 - settlement_percentage)
+settlement_status,Status of the recovery negotiation (here I don't know if it's for those in arrears or only those in arrears)
+settlement_term,Term (in months) of the recovery agreement
+sub_grade,Risk subclassification assigned to the credit
+tax_liens,Number of tax liens (something like judicial recovery of property tax)
+term,Credit term. It can be either 36 months or 60 months
+title,"Loan name, provided by the borrower"
+tot_coll_amt,Total amount of all outsourced debts over the entire period
+tot_cur_bal,Total balance of all contracts
+tot_hi_cred_lim,Total credit limit
+total_acc,Total number of credit lines currently in the client's record
+total_bal_ex_mort,"Total credit balance, excluding mortgages"
+total_bal_il,Total current balance of all installment contracts
+total_bc_limit,Total credit card limit
+total_cu_tl,Total number of credit contracts
+total_il_high_credit_limit,Total installment credit limit
+total_pymnt,Payments received to date related to the total borrowed
+total_pymnt_inv,Payments received to date related to the total borrowed financed by investors
+total_rec_int,Interest receipts to date
+total_rec_late_fee,Late payment fees received to date
+total_rec_prncp,Principal receipts to date
+total_rev_hi_lim  ,Total revolving credit limit
+url,Loan URL. Accesses with Brazilian IP addresses are denied.
+verification_status,Indicator of whether the reported income is verifiable (verified). If the Lending Club confirmed with the employer (source verified) or if the income has no proof whatsoever.
+verification_status_joint,Indicator of whether the reported joint income has proof (verified). If the Lending Club confirmed with the employers (source verified) or if the income has no proof whatsoever.
+zip_code,The first 3 digits of the borrower's zip code.
