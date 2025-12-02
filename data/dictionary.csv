@@ -22,7 +22,7 @@ disbursement_method,Method by which the borrower receives the funds (I don't thi
 dti,"Debt to Income. Debt-to-income ratio. Calculated with the total monthly commitment of the borrower, excluding mortgage and the requested loan, divided by the reported monthly income"
 dti_joint,Joint Debt to Income. Sum of aggregated monthly commitments divided by combined monthly income
 earliest_cr_line,Month reported by the borrower when they first took out a loan
-emp_length,"Length of employment in years. Possible values ​​between 0 and 10, with 0 being less than one year and 10 referring to ten years or more"
+emp_length,"Length of employment in years. Possible values between 0 and 10, with 0 being less than one year and 10 referring to ten years or more"
 emp_title,Position reported by the borrower at the time of loan application
 fico_range_high,Upper limit of the borrower's FICO score
 fico_range_low,Lower limit of the borrower's FICO score
