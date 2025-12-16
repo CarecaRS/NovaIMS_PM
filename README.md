@@ -91,17 +91,17 @@ The logistic regression model uses the LogisticRegression algorithm from the sci
 **Confusion Matrix for test data**
 ![Confusion Matrix for test data](images/lr_test.png)
 
-Model analytics for test data:__
-Accuracy: 0.783182__
-Sensitivity/Recall: 0.530680__
-Specificity: 0.909449__
-Precision: 0.745592__
+Model analytics for test data:\
+Accuracy: 0.783182\
+Sensitivity/Recall: 0.530680\
+Specificity: 0.909449\
+Precision: 0.745592\
 
 **Confusion Matrix for validation data**
 ![Confusion Matrix for validation data](images/lr_valid.png)
 
-Model analytics for validation data:__
-Accuracy: 0.783335__
-Sensitivity/Recall: 0.539480__
-Specificity: 0.907787__
-Precision: 0.749107__
+Model analytics for validation data: <br />
+Accuracy: 0.783335 <br />
+Sensitivity/Recall: 0.539480 <br />
+Specificity: 0.907787 <br />
+Precision: 0.749107 
