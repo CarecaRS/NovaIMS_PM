@@ -8,25 +8,25 @@ categorical features, that were made available in the original (raw) dataset.
 
 **Statistical summary of the numerical features**:
 
- loan_amnt  funded_amnt  funded_amnt_inv    int_rate  installment  \
-count 331304.0000  331304.0000      331304.0000 331304.0000  331304.0000   
-mean   15485.6705   15485.6705       15479.0312     12.5709     452.0909   
-std     9182.7264    9182.7264        9181.2607      4.6853     264.2243   
-min     1000.0000    1000.0000         725.0000      5.3200      14.7700   
-25%     8100.0000    8100.0000        8100.0000      8.8100     259.2400   
-50%    14000.0000   14000.0000       14000.0000     11.9900     387.1500   
-75%    20700.0000   20700.0000       20675.0000     15.3100     602.3000   
-max    40000.0000   40000.0000       40000.0000     30.9900    1618.2400   
+-----|loan_amnt|  funded_amnt|  funded_amnt_inv|    int_rate|  installment|
+|count| 331304.0000|  331304.0000|      331304.0000| 331304.0000|  331304.0000|   
+|mean|   15485.6705|   15485.6705|       15479.0312|     12.5709|     452.0909|   
+|std|     9182.7264|    9182.7264|        9181.2607|      4.6853|     264.2243|   
+|min|     1000.0000|    1000.0000|         725.0000|      5.3200|      14.7700|   
+|25%|     8100.0000|    8100.0000|        8100.0000|      8.8100|     259.2400|   
+|50%|    14000.0000|   14000.0000|       14000.0000|     11.9900|     387.1500|   
+|75%|    20700.0000|   20700.0000|       20675.0000|     15.3100|     602.3000|   
+|max|    40000.0000|   40000.0000|       40000.0000|     30.9900|    1618.2400|   
 
-        annual_inc         dti  delinq_2yrs  inq_last_6mths    open_acc  \
-count  331304.0000 331138.0000  331304.0000     331303.0000 331304.0000   
-mean    80425.2580     19.0286       0.3369          0.6083     11.8598   
-std     91150.7789     12.5358       0.9184          0.8880      5.7909   
-min         0.0000     -1.0000       0.0000          0.0000      0.0000   
-25%     48000.0000     12.0500       0.0000          0.0000      8.0000   
-50%     67314.0000     18.1900       0.0000          0.0000     11.0000   
-75%     95000.0000     25.0900       0.0000          1.0000     15.0000   
-max   9757200.0000    999.0000      21.0000          5.0000     81.0000   
+-----        |annual_inc|         dti|  delinq_2yrs|  inq_last_6mths|    open_acc|
+|count|  331304.0000| 331138.0000|  331304.0000|     331303.0000| 331304.0000|   
+|mean|   80425.2580|     19.0286|       0.3369|          0.6083|     11.8598|   
+|std|     91150.7789|     12.5358|       0.9184|          0.8880|      5.7909|   
+|min|         0.0000|     -1.0000|       0.0000|          0.0000|      0.0000|   
+|25%|     48000.0000|     12.0500|       0.0000|          0.0000|      8.0000|   
+|50%|     67314.0000|     18.1900|       0.0000|          0.0000|     11.0000|   
+|75%|     95000.0000|     25.0900|       0.0000|          1.0000|     15.0000|   
+|max|   9757200.0000|    999.0000|      21.0000|          5.0000|     81.0000|   
 
           pub_rec    revol_bal  revol_util   total_acc   out_prncp  \
 count 331304.0000  331304.0000 331074.0000 331304.0000 331304.0000   
@@ -81,6 +81,7 @@ The data is then segregated into three distinct groups: validation data (10% of 
 
 The logistic regression model uses the LogisticRegression algorithm from the scikit-learn library, obtaining Accuracy metric results of 0.7831 (test data) and 0.7833 (validation data). The confusion matrices and the resulting metrics for each dataset are shown below.
 
+**Confusion Matrix for test data**
 ![Confusion Matrix for test data](images/lr_test.png)
 
 Model analytics for test data:
@@ -89,6 +90,7 @@ Sensitivity/Recall: 0.530680
 Specificity: 0.909449
 Precision: 0.745592
 
+**Confusion Matrix for validation data**
 ![Confusion Matrix for validation data](images/lr_valid.png)
 
 Model analytics for validation data:
