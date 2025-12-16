@@ -130,7 +130,7 @@ Precision: 0.847912
 # Task 4
 ## Develop a deep learning model
 
-The deep learning relies on the `TensorFlow` package, using an input layer, two hidden layers (one dropout and one activation layer) and an output layer, obtaining Accuracy metric results of 0.9328 (test data) and 0.8894 (validation data). The confusion matrices and the resulting metrics for each dataset are shown below.
+The deep learning relies on the `TensorFlow` package, using an input layer, two hidden layers (one dropout and one activation layer) and an output layer, obtaining Accuracy metric results of 0.7711 (test data) and 0.7637 (validation data). The confusion matrices and the resulting metrics for each dataset are shown below.
 
 **Confusion Matrix for test data using a deep neural network (TensorFlow) model**\
 ![Confusion Matrix for test data using DNN with TensorFlow](images/nn_test.png)
