@@ -165,13 +165,13 @@ In the context of this analysis, then, a type I error occurs when a credit propo
 
 Type I errors may be better suited for well stablished institutions, which can afford to not make some profit while mantaining a good risk management strategy, while type II errors may be better suited for those financial institutions that are trying to expand their customer base and their potential profits, even if it's through incurring in a marginal greater risk.
 
-These are the aggregated four metrics from each model:
+These are the aggregated four metrics from each model comparing with test data:
 | Model | Accuracy | Sensitivity | Specificity | Precision |
 | --- | --- | --- | --- | --- |
 |          Logistic Regression |   0.7832  |     0.5307 |      0.9094 |    0.7456 |
 |  Machine Learning (Boosting) |   0.8894  |     0.8199 |      0.9249 |    0.8479 |
 |          Deep Neural Network |   0.7806  |     0.4435 |      0.9491 |    0.8133 |
 
-If we consider only the Accuracy metric as a determinant of a model's predictive power, then clearly the Machine Learning (Boosting) model stands out in relation to the other two. In our study, this model also surpasses the others in regards of the Sensitivity and Precision metrics. For the Specificity metric the best performing model was the Deep Neural Network one.
+Considering only the Accuracy metric as a determinant of a model's predictive power, then clearly the Machine Learning (Boosting) model stands out in relation to the other two. In this study, this model also surpasses the others in regards of the Sensitivity and Precision metrics. For the Specificity metric the best performing model was the Deep Neural Network one.
 
 Regarding the neural network models, the scientific literature indicates that these models rely heavily in great volumes of data (although without pointing out what is assumed to be a great volume of data) and this factor can explain why the neural network model had a fairly worse performance among the three models.
