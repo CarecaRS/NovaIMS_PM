@@ -1,5 +1,3 @@
-Important notice: the 'unseen-data' file made available by the professor has formatting errors. My CSV files are already fixed.
-
 # Task 1
 ## Make a preliminary statistical analysis of the credit dataset
 
@@ -86,22 +84,94 @@ The data is then segregated into three distinct groups: validation data (10% of 
 # Task 2
 ## Develop a logistic regression model
 
-The logistic regression model uses the LogisticRegression algorithm from the scikit-learn library, obtaining Accuracy metric results of 0.7831 (test data) and 0.7833 (validation data). The confusion matrices and the resulting metrics for each dataset are shown below.
+The logistic regression model uses the `LogisticRegression` algorithm from the `scikit-learn` library, obtaining Accuracy metric results of 0.7831 (test data) and 0.7833 (validation data). The confusion matrices and the resulting metrics for each dataset are shown below.
 
-**Confusion Matrix for test data**
-![Confusion Matrix for test data](images/lr_test.png)
+**Confusion Matrix for test data using the logistic regression model**\
+![Confusion Matrix for test data using sklearn LogisticRegression](images/lr_test.png)
 
 Model analytics for test data:\
 Accuracy: 0.783182\
 Sensitivity/Recall: 0.530680\
 Specificity: 0.909449\
-Precision: 0.745592\
+Precision: 0.745592
 
-**Confusion Matrix for validation data**
-![Confusion Matrix for validation data](images/lr_valid.png)
+**Confusion Matrix for validation data using the logistic regression model**\
+![Confusion Matrix for validation data using sklearn LogisticRegression](images/lr_valid.png)
 
-Model analytics for validation data: <br />
-Accuracy: 0.783335 <br />
-Sensitivity/Recall: 0.539480 <br />
-Specificity: 0.907787 <br />
+Model analytics for validation data:\
+Accuracy: 0.783335\
+Sensitivity/Recall: 0.539480\
+Specificity: 0.907787\
 Precision: 0.749107 
+
+# Task 3
+## Develop a machine learning model
+
+The machine learning uses the `CatBoost` library, with the `CatBoostClassifier` algorithm, obtaining Accuracy metric results of 0.9328 (test data) and 0.8894 (validation data). The confusion matrices and the resulting metrics for each dataset are shown below.
+
+**Confusion Matrix for test data using the machine learning (CatBoost) model**\
+![Confusion Matrix for test data using CatBoost](images/ml_test.png)
+
+Model analytics for test data:\
+Accuracy: 0.932877\
+Sensitivity/Recall: 0.878620\
+Specificity: 0.960009\
+Precision: 0.916573
+
+**Confusion Matrix for validation data using the machine learning (CatBoost) model**\
+![Confusion Matrix for validation data using CatBoost](images/ml_valid.png)
+
+Model analytics for validation data:\
+Accuracy: 0.889447\
+Sensitivity/Recall: 0.819888\
+Specificity: 0.924947\
+Precision: 0.847912
+
+# Task 4
+## Develop a deep learning model
+
+The deep learning relies on the `TensorFlow` package, using an input layer, two hidden layers (one dropout and one activation layer) and an output layer, obtaining Accuracy metric results of 0.9328 (test data) and 0.8894 (validation data). The confusion matrices and the resulting metrics for each dataset are shown below.
+
+**Confusion Matrix for test data using a deep neural network (TensorFlow) model**\
+![Confusion Matrix for test data using DNN with TensorFlow](images/nn_test.png)
+
+Model analytics for test data:\
+Accuracy: 0.771112\
+Sensitivity/Recall: 0.374973\
+Specificity: 0.969208\
+Precision: 0.858951
+
+**Confusion Matrix for validation data using a deep neural network (TensorFlow) model**\
+![Confusion Matrix for validation data using DNN with TensorFlow](images/nn_valid.png)
+
+Model analytics for validation data:\
+Accuracy: 0.763702\
+Sensitivity/Recall: 0.363273\
+Specificity: 0.968063\
+Precision: 0.853053\
+
+# Task 5
+## Evaluate the models result (predictive power)
+For the purposes of analyzing and comparing the models, metrics based on the Confusion Matrix are used, we rely in the following metrics:
+accuracy, sensitivity (recall), specificity, and precision, in addition to the Confusion Matrix itself. The same standard cutoff (0.5) was always used for all trained models: the cutoff is the decision threshold at which the algorithm classifies a binary problem into one class or another.
+
+Regarding the cut-off levels used, the figure below displays the individual ROC curves for each of the three trained models, using test data for comparison, as well as the reference line equivalent to a random guess classification (the dashed line).
+
+![ROC curves](images/roc_curves.png)
+
+There are two basic types of errors possible when analyzing any Confusion Matrix, defined as type I errors and type II errors. The first results from a classification error in which an observation is classified as positive when it should be correctly classified as negative (false positive), while a type II error occurs when an observation is classified as negative instead of being correctly classified as positive (false negative).
+
+In the context of this analysis, then, a type I error occurs when a credit proposal (an observation in the dataset) is incorrectly classified as likely to default (which would not prove to be true), and a type II error occurs when it is classified as a 'good customer', with a low risk of default, and which would prove to be in default in the future. Depending on economic policy or corporate governance itself, the institution has the freedom to modify the cutoff parameter to values ​​different from the standard, so that the credit model used allows for a more biased approach to one of the two errors.
+
+Type I errors may be better suited for well stablished institutions, which can afford to not make some profit while mantaining a good risk management strategy, while type II errors may be better suited for those financial institutions that are trying to expand their customer base and their potential profits, even if it's through incurring in a marginal greater risk.
+
+These are the aggregated four metrics from each model:
+| Model | Accuracy | Sensitivity | Specificity | Precision |
+| --- | --- | --- | --- | --- |
+|          Logistic Regression |   0.7832  |     0.5307 |      0.9094 |    0.7456 |
+|  Machine Learning (Boosting) |   0.8894  |     0.8199 |      0.9249 |    0.8479 |
+|          Deep Neural Network |   0.7806  |     0.4435 |      0.9491 |    0.8133 |
+
+If we consider only the Accuracy metric as a determinant of a model's predictive power, then clearly the Machine Learning (Boosting) model stands out in relation to the other two. In our study, this model also surpasses the others in regards of the Sensitivity and Precision metrics. For the Specificity metric the best performing model was the Deep Neural Network one.
+
+Regarding the neural network models, the scientific literature indicates that these models rely heavily in great volumes of data (although without pointing out what is assumed to be a great volume of data) and this factor can explain why the neural network model had a fairly worse performance among the three models.
