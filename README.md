@@ -4,7 +4,7 @@ Important notice: the 'unseen-data' file made available by the professor has for
 ## Make a preliminary statistical analysis of the credit dataset
 
 The following tables describe the statistical analysis for both classes of features, namely numerical features and 
-categorical features, that were made available in the original (raw) dataset.
+categorical features, that were made available in the original (raw) dataset before any wrangling done.
 
 **Statistical summary of the numerical features**:
 
@@ -54,23 +54,26 @@ categorical features, that were made available in the original (raw) dataset.
 
 **Statistical summary of the numerical features**:
 
-             term   grade emp_title emp_length home_ownership  \
-count      331304  331304    300514     307479         331304   
-unique          2       7     90441         11              4   
-top     36 months       B   Teacher  10+ years       MORTGAGE   
-freq       230667   98290      6412     109514         164411   
+|   |             term |   grade | emp_title | emp_length | home_ownership |
+| --- | --- | --- | --- | --- | --- |
+| count  |    331304 | 331304 |   300514  |   307479   |      331304  |  
+| unique |         2  |     7  |   90441  |       11    |          4  |  
+| mode   |  36 months |      B  | Teacher | 10+ years   |    MORTGAGE  |  
+| freq   |    230667  | 98290    |  6412  |   109514    |     164411  |  
 
-       verification_status issue_d             purpose addr_state  \
-count               331304  331304              331304     331304   
-unique                   3      11                  13         50   
-top        Source Verified  Mar-16  debt_consolidation         CA   
-freq                133327   56649              189096      46585   
+|   |        verification_status | issue_d   |          purpose | addr_state |
+| --- | --- | --- | --- | --- | --- |
+| count  |             331304 | 331304      |        331304   |  331304   |
+| unique |                  3  |    11      |            13   |      50   |
+| mode    |    Source Verified | Mar-16 | debt_consolidation  |       CA   |
+| freq    |            133327 |  56649   |           189096  |    46585   |
 
-       earliest_cr_line loan_status  origin  
-count            331304      310704  331304  
-unique              685           6       2  
-top              Sep-04  Fully Paid   Train  
-freq               2603      207036  310704
+|   |        earliest_cr_line | loan_status |  
+| --- | --- | --- |
+| count  |          331304   |   310704  |  
+| unique |             685   |        6  |  
+| mode  |            Sep-04  | Fully Paid |  
+| freq |              2603   |   207036 |
 
 # Preliminary work
 ## Before training models
@@ -89,16 +92,16 @@ The logistic regression model uses the LogisticRegression algorithm from the sci
 ![Confusion Matrix for test data](images/lr_test.png)
 
 Model analytics for test data:
-Accuracy: 0.783182
-Sensitivity/Recall: 0.530680
-Specificity: 0.909449
-Precision: 0.745592
+| Accuracy: | 0.783182 |
+| Sensitivity/Recall: | 0.530680 |
+| Specificity: | 0.909449 |
+| Precision: | 0.745592 |
 
 **Confusion Matrix for validation data**
 ![Confusion Matrix for validation data](images/lr_valid.png)
 
 Model analytics for validation data:
-Accuracy: 0.783335
-Sensitivity/Recall: 0.539480
-Specificity: 0.907787
-Precision: 0.749107
+| Accuracy: | 0.783335 |
+| Sensitivity/Recall: | 0.539480 |
+| Specificity: | 0.907787 |
+| Precision: | 0.749107 |
