@@ -4,7 +4,7 @@ Important notice: the 'unseen-data' file made available by the professor has for
 ## Make a preliminary statistical analysis of the credit dataset
 
 The following tables describe the statistical analysis for both classes of features, namely numerical features and 
-categorical features, that were made available in the original (raw) dataset before any wrangling done.
+categorical features, that were made available in the original (raw) dataset before any data wrangling done.
 
 **Statistical summary of the numerical features**:
 
@@ -62,7 +62,7 @@ categorical features, that were made available in the original (raw) dataset bef
 | freq   |    230667  | 98290    |  6412  |   109514    |     164411  |  
 
 |   |        verification_status | issue_d   |          purpose | addr_state |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | count  |             331304 | 331304      |        331304   |  331304   |
 | unique |                  3  |    11      |            13   |      50   |
 | mode    |    Source Verified | Mar-16 | debt_consolidation  |       CA   |
@@ -91,17 +91,17 @@ The logistic regression model uses the LogisticRegression algorithm from the sci
 **Confusion Matrix for test data**
 ![Confusion Matrix for test data](images/lr_test.png)
 
-Model analytics for test data:
-| Accuracy: | 0.783182 |
-| Sensitivity/Recall: | 0.530680 |
-| Specificity: | 0.909449 |
-| Precision: | 0.745592 |
+Model analytics for test data:__
+Accuracy: 0.783182__
+Sensitivity/Recall: 0.530680__
+Specificity: 0.909449__
+Precision: 0.745592__
 
 **Confusion Matrix for validation data**
 ![Confusion Matrix for validation data](images/lr_valid.png)
 
-Model analytics for validation data:
-| Accuracy: | 0.783335 |
-| Sensitivity/Recall: | 0.539480 |
-| Specificity: | 0.907787 |
-| Precision: | 0.749107 |
+Model analytics for validation data:__
+Accuracy: 0.783335__
+Sensitivity/Recall: 0.539480__
+Specificity: 0.907787__
+Precision: 0.749107__
