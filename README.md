@@ -50,7 +50,7 @@ categorical features, that were made available in the original (raw) dataset bef
 | 75%   |  18391.8971 |     1.0000  |
 | max   |  59808.2621 |     1.0000  |
 
-**Statistical summary of the numerical features**:
+**Statistical summary of the categorical features**:
 
 |   |             term |   grade | emp_title | emp_length | home_ownership |
 | --- | --- | --- | --- | --- | --- |
